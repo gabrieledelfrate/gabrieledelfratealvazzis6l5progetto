@@ -1,0 +1,102 @@
+#ix {
+  width: 10rem;
+  height: 10rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+h1 {
+  font-family: Arial;
+  font-weight: bold;
+}
+
+#genres {
+  border-color: white;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  height: 2.4rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 100%);
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.wrapper section {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  margin: 20px 0;
+}
+.wrapper section .item {
+  padding: 0 2px;
+  transition: 250ms all;
+}
+.wrapper section .item:hover {
+  margin: 0 40px;
+  transform: scale(1.2);
+}
+.wrapper section a {
+  position: absolute;
+  color: #fff;
+  text-decoration: none;
+  font-size: 6em;
+  background: rgb(0, 0, 0);
+  width: 80px;
+  padding: 20px;
+  text-align: center;
+  z-index: 1;
+}
+.wrapper section a:nth-of-type(1) {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+}
+.wrapper section a:nth-of-type(2) {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+}
+
+#searchInput {
+  color: white;
+  background-color: black;
+  border-color: white;
+}
+
+#language {
+  border-color: white;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+#profile {
+  width: 10rem;
+}
+
+#profileName {
+  height: 2rem;
+}
+
+.text-secondary {
+  font-size: x-large;
+}/*# sourceMappingURL=styles.css.map */
